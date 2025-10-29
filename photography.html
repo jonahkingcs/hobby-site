@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>Photography</title>
+</head>
+<body class="min-h-screen flex flex-col px-24 bg-yellow-100">
+    <!-- Nav bar -->
+    <nav class="navbar shadow-2xl">
+        <div>
+            <a class="nav-button" href="index.html"><h1 class="text-2xl">My Hobbies</h1></a>
+        </div>
+        <div>
+            <a class="nav-button" href="index.html">Home</a>
+        </div>
+        <div>
+            <a class="nav-button" href="photography.html">Photography</a>
+        </div>
+        <div>
+            <a class="nav-button" href="squash.html">Squash</a>
+        </div>
+    </nav>
+
+    <header class="w-full mx-auto text-left pb-12">
+        <h1 class="text-4xl font-semibold tracking-tight text-black sm:text-5xl">
+        Photography
+        </h1>
+        <p class="pt-2 text-md tracking-tight text-gray-600 max-w-150 text-left">Wherever I go my camera comes with me. I love to take photos out in nature or on trips to exciting cities. My favourites are photographs of friends and family associated with good memories. Most of my photos are taken using my phone for convenience but I found a bargain on eBay for a Canon EOS 4000D for more professional photography.</p>
+    </header>
+    <header class="w-full mx-auto text-left pt-12 pb-4">
+        <h1 class="text-2xl font-semibold tracking-tight text-black sm:text-4xl">
+        Landscapes
+        </h1>
+    </header>
+
+    <!--Landscape section-->
+    <section class="w-full flex justify-center bg-white items-center shadow-lg rounded-2xl ps-12 pe-12">
+        <h2 class="sr-only">Gallery</h2>
+
+        <div
+            class="flex overflow-x-auto overflow-y-hidden snap-x snap-mandatory
+                   [-ms-overflow-style:none] [scrollbar-width:none]
+                   gap-24 pb-12 py-12"
+            style="scroll-snap-type: x mandatory;"
+        >
+            <!-- image 1 -->
+
+            <div class="flex-shrink-0 snap-start w-[70vw] sm:w-[40vw] lg:w-[30vw] max-w-[480px]">
+                <div class="rounded-lg overflow-hidden bg-neutral-900 max-h-[360px] max-w-[480px]
+                            transition duration-300 ease-in-out hover:scale-105 hover:mask-y-from-85% hover:mask-y-to-100% shadow-lg">
+                    <img src="images/tennis.jpg" alt="Tennis courts at sunset in Oxford University Parks"
+                        class="w-full h-full object-cover block" />
+                </div>
+                <p class="mt-2 text-sm text-neutral-600">
+                    <strong>University Parks, Oxford</strong> - July 2025
+                </p>
+                <hr class="mt-1">
+                <p class="mt-2 text-sm text-neutral-500">Taken while on a walk with my parents while visiting from University for my birthday weekend. We said we'd try and play tennis here at some point. Still haven't gotten around to it.</p>
+            </div>
+
+
+            
+
+            <!-- image 2 -->
+            <div class="flex-shrink-0 snap-start w-[70vw] sm:w-[40vw] lg:w-[30vw] max-w-[480px]">
+                <div class="rounded-lg overflow-hidden bg-neutral-900 max-h-[360px] max-w-[480px]
+                            transition duration-300 ease-in-out hover:scale-105 hover:mask-y-from-85% hover:mask-y-to-100% shadow-lg">
+                    <img src="images/home_image.jpg" alt="Lady with wavy hair at the seaside"
+                        class="w-full h-full object-cover block" />
+                </div>
+                <p class="mt-2 text-sm text-neutral-600">
+                    <strong>Corfu</strong> - June 2023
+                </p>
+                <hr class="mt-1">
+                <p class="mt-2 text-sm text-neutral-500">My sister on a hidden beach in Corfu. We did our research for secluded beaches and ended up slashing our way through spiders webs in the forest to find this spot. Worth it. I'm unsure why she looks so miserable</p>
+            </div>
+
+            <!-- image 3 -->
+            <div class="flex-shrink-0 snap-start w-[70vw] sm:w-[40vw] lg:w-[30vw] max-w-[480px]">
+                <div class="rounded-lg overflow-hidden bg-neutral-900 max-h-[360px] max-w-[480px]
+                            transition duration-300 ease-in-out hover:scale-105 hover:mask-y-from-85% hover:mask-y-to-100% shadow-lg">
+                    <img src="images/snow.jpg" alt="Snow falling outside of Lidl"
+                        class="w-full h-full object-cover block" />
+                </div>
+                <p class="mt-2 text-sm text-neutral-600">
+                    <strong>Stirchley Lidl, Birmingham</strong> - November 2024
+                </p>
+                <hr class="mt-1">
+                <p class="mt-2 text-sm text-neutral-500">The first snow day I'd seen in years. This was the view of the Lidl opposite my uni flat before it was fully built. Everyone ditched lectures and had snowball fights on campus the rest of the day.</p>
+            </div>
+
+            <!-- image 4 -->
+            <div class="flex-shrink-0 snap-start w-[70vw] sm:w-[40vw] lg:w-[30vw] max-w-[480px]">
+                <div class="rounded-lg overflow-hidden bg-neutral-900 max-h-[360px] max-w-[480px]
+                            transition duration-300 ease-in-out hover:scale-105 hover:mask-y-from-85% hover:mask-y-to-100% shadow-lg">
+                    <img src="images/corfu.jpg" alt="Double beach in Corfu"
+                        class="w-full h-full object-cover block" />
+                </div>
+                <p class="mt-2 text-sm text-neutral-600">
+                    <strong>Porto Timoni, Corfu</strong> — June 2023
+                </p>
+                <hr class="mt-1">
+                <p class="mt-2 text-sm text-neutral-500">The famous beach you see when you look up pictures of Corfu. My Dad and I hiked up to a viewing point while the rest of the family lazed around on the beach. There was a huge storm over the sea later that night so we were lucky getting our swim in before it caught us.</p>
+            </div>
+            <!-- image 5 -->
+            <div class="flex-shrink-0 snap-start w-[70vw] sm:w-[40vw] lg:w-[30vw] max-w-[480px]">
+                <div class="rounded-lg overflow-hidden bg-neutral-900 max-h-[360px] max-w-[480px]
+                            transition duration-300 ease-in-out hover:scale-105 hover:mask-y-from-85% hover:mask-y-to-100% shadow-lg">
+                    <img src="images/hills.jpg" alt="Three friends on top of Malvern Hills"
+                        class="w-full h-full object-cover block" />
+                </div>
+                <p class="mt-2 text-sm text-neutral-600">
+                    <strong>Malvern Hills</strong> - February 2025
+                </p>
+                <hr class="mt-1">
+                <p class="mt-2 text-sm text-neutral-500">Playing catch with friends on top of Malvern Hills. We took a train down from Birmingham for the day to enjoy the first warm-ish weather of the year. Everyone brought a couple snacky things and we fastened together a cheese board picnic after the hike.</p>
+            </div>
+        </div>
+    </section>
+    <section class="w-full flex ps-12 pe-12">
+        <div
+            class="flex overflow-x-auto overflow-y-hidden snap-x snap-mandatory
+                   [-ms-overflow-style:none] [scrollbar-width:none]
+                    pb-6 py-6"
+            style="scroll-snap-type: x mandatory;"
+        ></div>
+    </section>
+
+    <header class="w-full mx-auto text-left pb-4">
+        <h1 class="text-2xl font-semibold tracking-tight text-black sm:text-4xl">
+        Portraits
+        </h1>
+    </header>
+
+    <!--Portrait section-->
+
+    <section class="w-full flex justify-center bg-white items-center shadow-lg rounded-2xl ps-12 pe-12">
+        <h2 class="sr-only">Gallery</h2>
+
+        <div
+            class="flex overflow-x-auto overflow-y-hidden snap-x snap-mandatory
+                   [-ms-overflow-style:none] [scrollbar-width:none]
+                   gap-24 pb-12 py-12"
+            style="scroll-snap-type: x mandatory;"
+        >
+            <!-- image 1 -->
+            <figure
+                class="flex-shrink-0 snap-start rounded-lg overflow-hidden bg-neutral-900
+                       w-[70vw] sm:w-[40vw] lg:w-[30vw] max-w-[360px] max-h-[480px]
+                       transition duration-300 ease-in-out hover:scale-105 hover:mask-y-from-85% hover:mask-y-to-100% shadow-lg"
+            >
+                <img
+                    src="images/banff.jpg"
+                    alt="Photo 1"
+                    class="w-full h-full object-cover block"
+                />
+            </figure>
+
+            <!-- image 2 -->
+            <figure
+                class="flex-shrink-0 snap-start rounded-lg overflow-hidden bg-neutral-900
+                       w-[70vw] sm:w-[40vw] lg:w-[30vw] max-w-[360px] max-h-[480px]
+                       transition duration-300 ease-in-out hover:scale-105 hover:mask-y-from-85% hover:mask-y-to-100% shadow-lg"
+            >
+                <img
+                    src="images/cadbury.jpg"
+                    alt="Photo 2"
+                    class="w-full h-full object-cover block"
+                />
+            </figure>
+
+            <!-- image 3 -->
+            <figure
+                class="flex-shrink-0 snap-start rounded-lg overflow-hidden bg-neutral-900
+                       w-[70vw] sm:w-[40vw] lg:w-[30vw] max-w-[360px] max-h-[480px]
+                       transition duration-300 ease-in-out hover:scale-105 hover:mask-y-from-85% hover:mask-y-to-100% shadow-lg"
+            >
+                <img
+                    src="images/snow.jpg"
+                    alt="Photo 3"
+                    class="w-full h-full object-cover block"
+                />
+            </figure>
+
+            <!-- image 4 -->
+            <figure
+                class="flex-shrink-0 snap-start rounded-lg overflow-hidden bg-neutral-900
+                       w-[70vw] sm:w-[40vw] lg:w-[30vw] max-w-[360px] max-h-[480px]
+                       transition duration-300 ease-in-out hover:scale-105 hover:mask-y-from-85% hover:mask-y-to-100% shadow-lg"
+            >
+                <img
+                    src="images/corfu.jpg"
+                    alt="Photo 4"
+                    class="w-full h-full object-cover block"
+                />
+                <p class="w-full mx-auto text-left pt-12 pb-12 text-md tracking-tight text-gray-600">I take a camera wherever I go.</p>
+
+            </figure>
+            <!-- image 5 -->
+            <figure
+                class="flex-shrink-0 snap-start rounded-lg overflow-hidden bg-neutral-900
+                       w-[70vw] sm:w-[40vw] lg:w-[30vw] max-w-[360px] max-h-[480px]
+                       transition duration-300 ease-in-out hover:scale-105 hover:mask-y-from-85% hover:mask-y-to-100% shadow-lg"
+            >
+                <img
+                    src="images/banff.jpg"
+                    alt="Photo 4"
+                    class="w-full h-full object-cover block"
+                />
+                <p class="w-full mx-auto text-left pt-12 pb-12 text-md tracking-tight text-gray-600">I take a camera wherever I go.</p>
+
+            </figure>
+        </div>
+    </section>
+
+    <section class="w-full flex ps-12 pe-12">
+        <div
+            class="flex overflow-x-auto overflow-y-hidden snap-x snap-mandatory
+                   [-ms-overflow-style:none] [scrollbar-width:none]
+                    pb-6 py-6"
+            style="scroll-snap-type: x mandatory;"
+        ></div>
+    </section>
+</body>
+</html>
