@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>Jonah's Hobbies</title>
+</head>
+<body class="min-h-screen flex flex-col px-4 sm:pb-0 md:pb-6 md:px-24 sm:px-12 bg-yellow-100 font-inter">
+    <!-- Nav bar -->
+    <nav class="navbar max-h-20 shadow-2xl px-4 sm:px-6 text-shadow-sm/5">
+        <div class="w-full flex items-center justify-between">
+            <!-- Always visible -->
+            <a class="nav-button py-3" href="index.html">
+            <h1 class="text-2xl font-semibold">My Hobbies</h1>
+            </a>
+
+            <!-- Hidden on small, shown at ≥sm -->
+            <div class="hidden md:flex items-center pl-16 gap-8 flex-nowrap">
+                <a class="nav-button" href="index.html">Home</a>
+                <a class="nav-button" href="photography.html">Photography</a>
+                <a class="nav-button" href="game_dev.html">Game Dev</a>
+                <a class="nav-button" href="korfball.html">Korfball</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="w-full mx-auto text-left pb-12">
+        <h1 class="text-4xl font-semibold tracking-tight text-blue-900 sm:text-5xl text-shadow-sm/5">
+        Game Development
+        </h1>
+        <p class="pt-2 pb-2 text-md tracking-tight text-gray-600 max-w-150 text-left">I started working on SlimeShot in September 2025 after having an idea for an angry birds inspired platformer. 
+            I chose to go for a 2D pixel art style to give the game a retro arcade look. Beginning this project got me really excited to eventually have a fully finished game 
+            with enough levels and level themes to keep players interested for at least a couple of hours.<br>
+            <br>This page shows off my progress so far and documents the different steps I took to 
+            get a few playable levels working.
+        </p>
+        <hr>
+    </header>
+    <!-- 12-col grid -->
+    <section class="grid grid-cols-12 gap-6 md:gap-8">
+
+        <div class="col-span-8 bg-white rounded-2xl shadow-lg inset-shadow-sm inset-shadow-indigo-100 inset-ring inset-ring-blue-200/75 p-6 hover:shadow-xl hover:scale-103 transition">
+            <h3 class="text-2xl font-semibold text-blue-900">Game Engine</h3>
+            <p class="mt-2 text-sm text-gray-600 pb-4">Blank Unity Scene</p>
+            <img src="images/game_dev/blank_unity_scene.png" class="rounded-xl shadow-lg">
+        </div>
+
+        <div class="col-span-4 bg-white rounded-2xl shadow-lg inset-shadow-sm inset-shadow-indigo-100 inset-ring inset-ring-blue-200/75 p-6 hover:shadow-xl hover:scale-103 transition">
+            <h3 class="text-2xl font-semibold text-blue-900">Game Engine</h3>
+            <p class="mt-2 text-sm text-gray-600 pb-4">I decided to use LibreSprite to create the pixel art for my tile textures. 
+                Each tile in the game is 16 by 16 pixels large giving a simplistic look to every sprite. 
+                Below is the castle background texture. The most time-consuming part was getting the edges to line up with each other, allowing the texture to seamlessly repeat. 
+                This texture is made up of thirty-five 16 by 16 pixel squares, represented by the gridlines in the image.
+            </p>
+            <img src="images/game_dev/background.png" class="rounded-xl shadow-lg">
+        </div>
+
+        <div class="col-span-4 bg-white rounded-2xl shadow-lg inset-shadow-sm inset-shadow-indigo-100 inset-ring inset-ring-blue-200/75 p-6 hover:shadow-xl hover:scale-103 transition">
+            <h3 class="text-2xl font-semibold text-blue-900">Player</h3>
+            <p class="mt-2 text-sm text-gray-600 pb-4">You play as a happy slime character. Because of the slimy surface, you stick to any wall you touch. 
+                To control the character you pull back your mouse in the opposite direction of where you want to travel. The further you pull back, the higher your power is. 
+                When you let go you are then slung through the air to wherever you aimed at. The objective is to reach the top of the castle in each level as quickly as possible. 
+                Levels ramp up in difficulty, adding in more complex mechanics like moving hazards, and rising lava.
+            </p>
+            <img src="images/game_dev/slime.png" class="rounded-xl shadow-lg">
+        </div>
+
+        <div class="col-span-8 bg-white rounded-2xl shadow-lg inset-shadow-sm inset-shadow-indigo-100 inset-ring inset-ring-blue-200/75 p-6 hover:shadow-xl hover:scale-103 transition">
+            <h3 class="text-2xl font-semibold text-blue-900">Hazards</h3>
+            <div class="grid grid-cols-2">
+                <p class="mt-2 text-sm text-gray-600 pb-4 col-span-1">Spikes can be found on any ground, wall, or ceiling surface. 
+                    If you touch them you die instantly and have to restart the level.</p>
+                    <p class="mt-2 text-sm text-gray-600 pb-4 col-span-1">As levels get more tricky, fireballs are introduced.</p>
+            </div>
+            <img src="images/game_dev/hazards.png" class="rounded-xl shadow-lg">
+        </div>
+
+    </section>
+
+    
+
+</body>
+</html>
