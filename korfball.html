@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>Jonah's Hobbies</title>
+</head>
+<body class="min-h-screen flex flex-col px-4 sm:pb-0 md:pb-6 md:px-24 sm:px-12 bg-yellow-100 font-inter">
+    <!-- Nav bar -->
+    <nav class="navbar max-h-20 shadow-2xl px-4 sm:px-6 text-shadow-sm/5">
+        <div class="w-full flex items-center justify-between">
+            <!-- Always visible -->
+            <a class="nav-button py-3" href="index.html">
+            <h1 class="text-2xl font-semibold">My Hobbies</h1>
+            </a>
+
+            <!-- Hidden on small, shown at ≥sm -->
+            <div class="hidden md:flex items-center pl-16 gap-8 flex-nowrap">
+                <a class="nav-button" href="index.html">Home</a>
+                <a class="nav-button" href="photography.html">Photography</a>
+                <a class="nav-button" href="game_dev.html">Game Dev</a>
+                <a class="nav-button" href="korfball.html">Korfball</a>
+            </div>
+        </div>
+    </nav>
+
+    
+    <!-- 12-col grid -->
+    <section class="grid grid-cols-12 gap-6 md:gap-8">
+        <header class="col-span-4 text-left pb-12">
+            <h1 class="text-4xl font-semibold tracking-tight text-blue-900 sm:text-5xl text-shadow-sm/5">
+            Home Page
+            </h1>
+            <p class="pt-2 text-md tracking-tight text-gray-600 max-w-150 text-left">One of my hobbies is the Dutsch sport<strong> Korfball</strong></p> 
+            <hr class="max-w-150">
+            <p class="pt-2 text-md tracking-tight text-gray-600 max-w-150 text-left">I would be surprised if you have heard of it. 
+                I sure hadn't when I was approached by Korfball players at Birmingham University's sports fair. 
+                This page will give a quick background of the sport and summarise the rules that make Korfball so unique.
+            </p>
+            
+        </header>
+
+    </section>
+
+</body>
+</html>
