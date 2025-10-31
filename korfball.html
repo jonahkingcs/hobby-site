@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="styles.css">
-    <title>Jonah's Hobbies</title>
+    <title>Korfball</title>
 </head>
-<body class="min-h-screen flex flex-col px-4 sm:pb-0 md:pb-6 md:px-24 sm:px-12 bg-yellow-100 font-inter">
+<body class="min-h-screen flex flex-col px-4 sm:pb-0 md:pb-6 md:px-24 sm:px-12 bg-yellow-100/80 font-inter
+         bg-[url('images/background/mountain.png')] [background-size:cover] [background-position:center] [background-repeat:no-repeat]">
     <!-- Nav bar -->
     <nav class="navbar max-h-20 shadow-2xl px-4 sm:px-6 text-shadow-sm/5">
         <div class="w-full flex items-center justify-between">
@@ -28,19 +29,50 @@
 
     
     <!-- 12-col grid -->
-    <section class="grid grid-cols-12 gap-6 md:gap-8">
-        <header class="col-span-4 text-left pb-12">
+    <section class="grid grid-cols-12 gap-2 lg:gap-12">
+        <header class="col-span-12 lg:col-span-5 text-left pb-12">
             <h1 class="text-4xl font-semibold tracking-tight text-blue-900 sm:text-5xl text-shadow-sm/5">
-            Home Page
+            Korfball
             </h1>
             <p class="pt-2 text-md tracking-tight text-gray-600 max-w-150 text-left">One of my hobbies is the Dutsch sport<strong> Korfball</strong></p> 
             <hr class="max-w-150">
-            <p class="pt-2 text-md tracking-tight text-gray-600 max-w-150 text-left">I would be surprised if you have heard of it. 
+            <p class="pt-2 pb-8 text-md tracking-tight text-gray-600 max-w-150 text-left">I would be surprised if you have heard of it. 
                 I sure hadn't when I was approached by Korfball players at Birmingham University's sports fair. 
+                They convinced me to come along to the taster sessions in freshers week, and after those I was hooked. 
+                I joined the 3rd team for one semester and was quickly moved down to the 4th team by the coach after letting too many opponents score. 
+                The highlights of joining Korfball for me were getting to meet such a diverse group of people and meet a bunch of close friends after moving to a new city.<br><br>
                 This page will give a quick background of the sport and summarise the rules that make Korfball so unique.
             </p>
-            
+            <div class="bg-white rounded-2xl shadow-lg inset-shadow-sm inset-shadow-indigo-100 inset-ring inset-ring-blue-200/75 p-6 hover:shadow-xl hover:scale-103 hover:bg-blue-50 transition">
+                <h3 class="text-2xl font-semibold text-blue-900">The Rules</h3>
+                <hr class="pb-2">
+                <ol>
+                    <li><strong>1. Teams & zones: </strong>8 players per team. The court is split into two zones (attack & defence). Each zone has 2 women + 2 men.</li><br>
+                    <li><strong>2. Fixed halves: </strong>Players stay in their zone. You only switch between attack and defence after <strong>every 2 goals</strong> scored.</li><br>
+                    <li><strong>3. Marking: </strong>You defend players of the <strong>same gender</strong>.</li><br>
+                    <li><strong>4. No travelling: </strong>You can't dribble or take steps while holding the ball. You must pass to move it, like netball.</li><br>
+                    <li><strong>5. No physical contact: </strong>Blocking/holding/pushing are fouls. Play the ball, not the player.</li><br>
+                    <li><strong>6. Defended-shots: </strong>A shot does not count if it is <strong>defended</strong>. This is where a defender of the same gender is between you and the post, within arm's length, actively contesting.</li><br>
+                    <li><strong>7. Shooting & scoring: </strong>Score by throwing the ball down through the korf basket.</li><br>
+                </ol>
+            </div>
         </header>
+        <div class="col-span-12 lg:col-span-7 bg-white mb-12 rounded-2xl shadow-lg inset-shadow-sm inset-shadow-indigo-100 inset-ring inset-ring-blue-200/75 p-6 hover:shadow-xl hover:scale-103 hover:bg-blue-50 transition">
+            <h3 class="text-2xl font-semibold text-blue-900">Court</h3>
+            <p class="mt-2 text-sm text-gray-600 pb-4">Illustration of the korf court</p>
+            <ul class="list-disc ps-6 space-y-2 text-gray-700">
+                <li><strong>Size: </strong>40m x 20m.</li>
+                <li><strong>Halves: </strong>Centre line splits the court into two squares.</li>
+                <li><strong>Korfs: </strong>There is one korf hoop to score into in either half court.</li>
+                <li><strong>Penalty spot: </strong>2.5m in front of the post.</li>
+                <li><strong>Marked circles: </strong>Orange circles around the post and around the penalty spot (the two circles overlap)</li>
+                <li><strong>Shot clocks: </strong>One on each sideline</li>
+                <li><strong>Lines: </strong>Outer boundary lines are the sidelines (long edges) and endlines (short edges)</li>
+            </ul>
+            <img src="images/korfball/court.png" class="rounded-xl shadow-lg inset-shadow-sm inset-shadow-indigo-100 inset-ring inset-ring-blue-200/75">
+        </div>
+        <img src="images/korfball/match.png" class="col-span-12 rounded-2xl shadow-lg inset-shadow-sm inset-shadow-indigo-100 inset-ring inset-ring-blue-200/75 hover:shadow-xl hover:scale-103 transition"">
+        
 
     </section>
 

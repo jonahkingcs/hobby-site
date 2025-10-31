@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="styles.css">
-    <title>Jonah's Hobbies</title>
+    <title>Game Development</title>
 </head>
-<body class="min-h-screen flex flex-col px-4 sm:pb-0 md:pb-6 md:px-24 sm:px-12 bg-yellow-100 font-inter">
+<body class="min-h-screen flex flex-col px-4 sm:pb-0 md:pb-6 md:px-24 sm:px-12 bg-yellow-100/80 font-inter
+         bg-[url('images/background/mountain.png')] [background-size:cover] [background-position:center] [background-repeat:no-repeat]">
     <!-- Nav bar -->
     <nav class="navbar max-h-20 shadow-2xl px-4 sm:px-6 text-shadow-sm/5">
         <div class="w-full flex items-center justify-between">
@@ -41,14 +42,21 @@
     <!-- 12-col grid -->
     <section class="grid grid-cols-12 gap-6 md:gap-8">
 
-        <div class="col-span-8 bg-white rounded-2xl shadow-lg inset-shadow-sm inset-shadow-indigo-100 inset-ring inset-ring-blue-200/75 p-6 hover:shadow-xl hover:scale-103 transition">
+        <div class="col-span-12 lg:col-span-8 bg-white rounded-2xl shadow-lg inset-shadow-sm inset-shadow-indigo-100 inset-ring inset-ring-blue-200/75 p-6 hover:shadow-xl hover:scale-103 hover:bg-blue-50 transition">
             <h3 class="text-2xl font-semibold text-blue-900">Game Engine</h3>
-            <p class="mt-2 text-sm text-gray-600 pb-4">Blank Unity Scene</p>
-            <img src="images/game_dev/blank_unity_scene.png" class="rounded-xl shadow-lg">
+            <p class="mt-2 text-sm text-gray-600 pb-4">I chose to build SlimeShot in Unity because it is a beginner friendly yet powerful game engine. 
+                It's perfect for shipping a polished 2D game to both Windows and MacOS. 
+                Unity has a great toolset (Tilemaps, Pixel-Perfect Camera, Rigidbody2D physics, and TextMeshPro) letting me focus on gameplay. 
+                I code the gameplay mechanics in C# and design the levels using tile palettes in the scene editor.<br><br>
+                The internet is full of tutorials and documentation making learning as I go an easier process than I expected. YouTube videos help me fix one problem at a time and adapt concepts to mechanic ideas I have for my specific game.
+                <br><br>
+                This image shows off a level which involves climbing the castle while dodging spikes as lava slowly rises. This is currently the fourth level in the game, however I plan on adding more levels before this in the future.
+            </p>
+            <img src="images/game_dev/unity_scene.png" class="rounded-xl shadow-lg">
         </div>
 
-        <div class="col-span-4 bg-white rounded-2xl shadow-lg inset-shadow-sm inset-shadow-indigo-100 inset-ring inset-ring-blue-200/75 p-6 hover:shadow-xl hover:scale-103 transition">
-            <h3 class="text-2xl font-semibold text-blue-900">Game Engine</h3>
+        <div class="col-span-12 lg:col-span-4 bg-white rounded-2xl shadow-lg inset-shadow-sm inset-shadow-indigo-100 inset-ring inset-ring-blue-200/75 p-6 hover:shadow-xl hover:scale-103 hover:bg-blue-50 transition">
+            <h3 class="text-2xl font-semibold text-blue-900">Sprite Creator</h3>
             <p class="mt-2 text-sm text-gray-600 pb-4">I decided to use LibreSprite to create the pixel art for my tile textures. 
                 Each tile in the game is 16 by 16 pixels large giving a simplistic look to every sprite. 
                 Below is the castle background texture. The most time-consuming part was getting the edges to line up with each other, allowing the texture to seamlessly repeat. 
@@ -57,7 +65,7 @@
             <img src="images/game_dev/background.png" class="rounded-xl shadow-lg">
         </div>
 
-        <div class="col-span-4 bg-white rounded-2xl shadow-lg inset-shadow-sm inset-shadow-indigo-100 inset-ring inset-ring-blue-200/75 p-6 hover:shadow-xl hover:scale-103 transition">
+        <div class="col-span-12 lg:col-span-4 bg-white rounded-2xl shadow-lg inset-shadow-sm inset-shadow-indigo-100 inset-ring inset-ring-blue-200/75 p-6 hover:shadow-xl hover:scale-103 hover:bg-blue-50 transition">
             <h3 class="text-2xl font-semibold text-blue-900">Player</h3>
             <p class="mt-2 text-sm text-gray-600 pb-4">You play as a happy slime character. Because of the slimy surface, you stick to any wall you touch. 
                 To control the character you pull back your mouse in the opposite direction of where you want to travel. The further you pull back, the higher your power is. 
@@ -67,12 +75,15 @@
             <img src="images/game_dev/slime.png" class="rounded-xl shadow-lg">
         </div>
 
-        <div class="col-span-8 bg-white rounded-2xl shadow-lg inset-shadow-sm inset-shadow-indigo-100 inset-ring inset-ring-blue-200/75 p-6 hover:shadow-xl hover:scale-103 transition">
+        <div class="col-span-12 lg:col-span-8 bg-white rounded-2xl shadow-lg inset-shadow-sm inset-shadow-indigo-100 inset-ring inset-ring-blue-200/75 p-6 hover:shadow-xl hover:scale-103 hover:bg-blue-50 transition">
             <h3 class="text-2xl font-semibold text-blue-900">Hazards</h3>
             <div class="grid grid-cols-2">
-                <p class="mt-2 text-sm text-gray-600 pb-4 col-span-1">Spikes can be found on any ground, wall, or ceiling surface. 
-                    If you touch them you die instantly and have to restart the level.</p>
-                    <p class="mt-2 text-sm text-gray-600 pb-4 col-span-1">As levels get more tricky, fireballs are introduced.</p>
+                <p class="mt-2 text-sm text-gray-600 pb-4 col-span-1 pr-12"><strong class="text-xl">Spikes</strong><br>Spikes can be found on any ground, wall, or ceiling surface. 
+                    If you touch them you die instantly and have to restart the level. The hitbox for the spikes is mapped directly to the visible pixels, rather than the full 16x16 square.</p>
+                    <p class="mt-2 text-sm text-gray-600 pb-4 col-span-1"><strong class="text-xl">Fireballs</strong><br>As levels get more tricky, fireballs are introduced. These move along a custom path that I can set in 
+                        Unity. Sometimes they go up and down, left to right, or in a circuit. Their speed is changeable so depending on how nasty I want the level to be I make 
+                        them move much faster.
+                    </p>
             </div>
             <img src="images/game_dev/hazards.png" class="rounded-xl shadow-lg">
         </div>
